@@ -6,7 +6,7 @@ public class LinearSearch22 {
         Scanner sc = new Scanner(System.in);
 
         int key;
-        int hasil = 0;
+        int hasil = -1;
 
         System.out.print("Masukkan Jumlah Elemen Array: ");
         int jmlArray = sc.nextInt();
@@ -16,20 +16,19 @@ public class LinearSearch22 {
             System.out.printf("Masukkan Elemen Array Ke-"+i+" : ");
             arrayInt[i] = sc.nextInt();
         }
+
+        System.out.print("Masukkan Key yang Ingin Dicari: ");
+        key = sc.nextInt();
         for (int i = 0; i < arrayInt.length; i++)
         {
-            System.out.print("Masukkan Key yang Ingin Dicari: ");
-            key = sc.nextInt();
              if (arrayInt[i] == key) {
                 hasil = i;
                 System.out.println("Key ada dalam array pada posisi indeks ke-"+hasil);
                 break;
             }
-            else
-            {
-                System.out.println("Key Tidak Ditemukan!");
-                break;
-            }
+        }
+        if (hasil == -1) {
+            System.out.println("n");
         }
     }
 }
