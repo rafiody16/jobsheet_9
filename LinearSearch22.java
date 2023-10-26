@@ -28,7 +28,7 @@ public class LinearSearch22 {
             }
         }
         if (hasil == -1) {
-            System.out.println("n");
+            System.out.println("Key Tidak Ditemukan!");
         }
     }
 }
